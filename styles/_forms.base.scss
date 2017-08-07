@@ -12,6 +12,10 @@ input, textarea, select, .so-dropdown__select {
   background: $s-color-neutral9;
   border-radius: $s-var-radius;
 }
+.so-dropdown.is-disabled {
+  background-color: $s-color-neutral8;
+  cursor: not-allowed;
+}
 // Calculations:
 // Right box width height = text size * 1.5 line height + 0.6666 of $so-inputPadding = 2.16666em
 // Select right padding = Right box width height + 1em from $so-inputPadding = 3.1666em
@@ -69,4 +73,7 @@ input, textarea, select, .so-dropdown__select {
     border-top-color: $s-color-neutral6;
 
     pointer-events: none;
+  }
+  .so-dropdown__select:disabled {
+    cursor: not-allowed;
   }
