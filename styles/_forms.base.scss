@@ -12,7 +12,8 @@ input, textarea, select, .so-dropdown__select {
   background: $s-color-neutral9;
   border-radius: $s-var-radius;
 }
-.so-dropdown.is-disabled {
+.so-dropdown.is-disabled,
+html input.is-disabled {
   background-color: $s-color-neutral8;
   cursor: not-allowed;
 }
